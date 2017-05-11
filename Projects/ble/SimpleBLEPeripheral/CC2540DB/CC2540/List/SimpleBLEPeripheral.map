@@ -2,15 +2,15 @@
 #                                                                              #
 #      IAR Universal Linker V5.0.2.5/W32                                       #
 #                                                                              #
-#           Link time     =  05/May/2017  13:31:49                             #
+#           Link time     =  11/May/2017  18:40:59                             #
 #           Target CPU    =  x51                                               #
-#           List file     =  E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\List\SimpleBLEPeripheral.map           #
-#           Output file 1 =  E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Exe\SimpleBLEPeripheral.hex            #
+#           List file     =  C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\List\SimpleBLEPeripheral.map      #
+#           Output file 1 =  C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Exe\SimpleBLEPeripheral.hex       #
 #                            Format: intel-extended                            #
-#           Output file 2 =  E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Exe\SimpleBLEPeripheral.d51            #
+#           Output file 2 =  C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Exe\SimpleBLEPeripheral.d51       #
 #                            Format: debug                                     #
 #                            UBROF version 10.0.3                              #
 #                            Using library modules for C-SPY (-rt)             #
@@ -19,87 +19,87 @@
 #                            -D_NR_OF_BANKS=0x07 -D_CODEBANK_END=0xFFFF        #
 #                            -D_CODEBANK_START=0x8000 -D?CBANK_MASK=0xFF       #
 #                            -D?CBANK=0x9F                                     #
-#                            E:\InchBle\Projects\ble\Libraries\CC2540DB\bin\CC #
-#                            2541_BLE_peri.lib                                 #
-#                            E:\InchBle\Projects\ble\Libraries\Common\bin\CC25 #
-#                            4x_BLE_HCI_TL_None.lib                            #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OSAL.r51                           #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OSAL_ClockBLE.r51                  #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OSAL_Memory.r51                    #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OSAL_PwrMgr.r51                    #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OSAL_SimpleBLEPeripheral.r51       #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OSAL_Timers.r51                    #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\OnBoard.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\SimpleBLEPeripheral_Main.r51       #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\devinfoservice.r51                 #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\gap.r51                            #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\gapbondmgr.r51                     #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\gatt_uuid.r51                      #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_adc.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_aes.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_crc.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_dma.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_drivers.r51                    #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_flash.r51                      #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_key.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_lcd.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_led.r51                        #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_sleep.r51                      #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_startup.r51                    #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_timer.r51                      #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\hal_uart.r51                       #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\inch.r51                           #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\myiic.r51                          #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\npi.r51                            #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\osal_bufmgr.r51                    #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\osal_cbtimer.r51                   #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\osal_snv.r51                       #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\peripheral.r51                     #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\simpleBLEPeripheral.r51            #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Obj\simpleGATTprofile.r51              #
+#                            C:\Work\InchBle\Projects\ble\Libraries\CC2540DB\b #
+#                            in\CC2541_BLE_peri.lib                            #
+#                            C:\Work\InchBle\Projects\ble\Libraries\Common\bin #
+#                            \CC254x_BLE_HCI_TL_None.lib                       #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OSAL.r51                      #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OSAL_ClockBLE.r51             #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OSAL_Memory.r51               #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OSAL_PwrMgr.r51               #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OSAL_SimpleBLEPeripheral.r51  #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OSAL_Timers.r51               #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\OnBoard.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\SimpleBLEPeripheral_Main.r51  #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\devinfoservice.r51            #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\gap.r51                       #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\gapbondmgr.r51                #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\gatt_uuid.r51                 #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_adc.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_aes.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_crc.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_dma.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_drivers.r51               #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_flash.r51                 #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_key.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_lcd.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_led.r51                   #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_sleep.r51                 #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_startup.r51               #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_timer.r51                 #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\hal_uart.r51                  #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\inch.r51                      #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\myiic.r51                     #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\npi.r51                       #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\osal_bufmgr.r51               #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\osal_cbtimer.r51              #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\osal_snv.r51                  #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\peripheral.r51                #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\simpleBLEPeripheral.r51       #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Obj\simpleGATTprofile.r51         #
 #                            -o                                                #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\Exe\SimpleBLEPeripheral.d51            #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\Exe\SimpleBLEPeripheral.d51       #
 #                            -l                                                #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\CC2540\List\SimpleBLEPeripheral.map           #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\CC2540\List\SimpleBLEPeripheral.map      #
 #                            -xmsn -f                                          #
-#                            E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC254 #
-#                            0DB\..\..\common\cc2540\ti_51ew_cc2540b.xcl       #
+#                            C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
+#                            CC2540DB\..\..\common\cc2540\ti_51ew_cc2540b.xcl  #
 #                            (-D_IDATA_END=0xFF -D_PDATA_START=0x1E00          #
 #                            -D_PDATA_END=0x1EFF -D_IXDATA_START=0x0001        #
 #                            -D_IXDATA_END=0x1EFF                              #
@@ -215,9 +215,9 @@
 #                            -D_NR_OF_VIRTUAL_REGISTERS=10 -D?PBANK=0x93       #
 #                            -e?BCALL_FF=?BCALL -e?BRET_FF=?BRET               #
 #                            -e?BDISPATCH_FF=?BDISPATCH -rt                    #
-#                            -Ointel-extended=E:\InchBle\Projects\ble\SimpleBL #
-#                            EPeripheral\CC2540DB\CC2540\Exe\SimpleBLEPeripher #
-#                            al.hex                                            #
+#                            -Ointel-extended=C:\Work\InchBle\Projects\ble\Sim #
+#                            pleBLEPeripheral\CC2540DB\CC2540\Exe\SimpleBLEPer #
+#                            ipheral.hex                                       #
 #                            -s __program_start                                #
 #                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
 #                            bench 6.0 Evaluation\8051\LIB\CLIB\cl-pli-blxd-1e #
@@ -356,7 +356,7 @@ Absolute parts
            _NR_OF_BANKS            00000007 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\Libraries\CC2540DB\bin\CC2541_BLE_peri.lib
+  FILE NAME : C:\Work\InchBle\Projects\ble\Libraries\CC2540DB\bin\CC2541_BLE_peri.lib
   LIBRARY MODULE, NAME : att_server
 
   SEGMENTS IN THE MODULE
@@ -15111,7 +15111,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.lib
+  FILE NAME : C:\Work\InchBle\Projects\ble\Libraries\Common\bin\CC254x_BLE_HCI_TL_None.lib
   LIBRARY MODULE, NAME : hci_tl
 
   SEGMENTS IN THE MODULE
@@ -15268,7 +15268,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL.r51
   PROGRAM MODULE, NAME : OSAL
 
   SEGMENTS IN THE MODULE
@@ -16106,7 +16106,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_ClockBLE.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_ClockBLE.r51
   PROGRAM MODULE, NAME : OSAL_ClockBLE
 
   SEGMENTS IN THE MODULE
@@ -16167,7 +16167,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_Memory.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_Memory.r51
   PROGRAM MODULE, NAME : OSAL_Memory
 
   SEGMENTS IN THE MODULE
@@ -16309,7 +16309,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_PwrMgr.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_PwrMgr.r51
   PROGRAM MODULE, NAME : OSAL_PwrMgr
 
   SEGMENTS IN THE MODULE
@@ -16383,7 +16383,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_SimpleBLEPeripheral.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_SimpleBLEPeripheral.r51
   PROGRAM MODULE, NAME : OSAL_SimpleBLEPeripheral
 
   SEGMENTS IN THE MODULE
@@ -16441,7 +16441,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_Timers.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OSAL_Timers.r51
   PROGRAM MODULE, NAME : OSAL_Timers
 
   SEGMENTS IN THE MODULE
@@ -16698,7 +16698,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OnBoard.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\OnBoard.r51
   PROGRAM MODULE, NAME : OnBoard
 
   SEGMENTS IN THE MODULE
@@ -16849,7 +16849,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\SimpleBLEPeripheral_Main.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\SimpleBLEPeripheral_Main.r51
   PROGRAM MODULE, NAME : SimpleBLEPeripheral_Main
 
   SEGMENTS IN THE MODULE
@@ -16879,7 +16879,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\devinfoservice.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\devinfoservice.r51
   PROGRAM MODULE, NAME : devinfoservice
 
   SEGMENTS IN THE MODULE
@@ -16910,7 +16910,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\gap.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\gap.r51
   PROGRAM MODULE, NAME : gap
 
   SEGMENTS IN THE MODULE
@@ -16934,7 +16934,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\gapbondmgr.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\gapbondmgr.r51
   PROGRAM MODULE, NAME : gapbondmgr
 
   SEGMENTS IN THE MODULE
@@ -17930,7 +17930,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\gatt_uuid.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\gatt_uuid.r51
   PROGRAM MODULE, NAME : gatt_uuid
 
   SEGMENTS IN THE MODULE
@@ -18091,7 +18091,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_adc.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_adc.r51
   PROGRAM MODULE, NAME : hal_adc
 
   SEGMENTS IN THE MODULE
@@ -18179,7 +18179,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_aes.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_aes.r51
   PROGRAM MODULE, NAME : hal_aes
 
   SEGMENTS IN THE MODULE
@@ -18271,7 +18271,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_crc.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_crc.r51
   PROGRAM MODULE, NAME : hal_crc
 
   SEGMENTS IN THE MODULE
@@ -18292,7 +18292,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_dma.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_dma.r51
   PROGRAM MODULE, NAME : hal_dma
 
   SEGMENTS IN THE MODULE
@@ -18415,7 +18415,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_drivers.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_drivers.r51
   PROGRAM MODULE, NAME : hal_drivers
 
   SEGMENTS IN THE MODULE
@@ -18517,7 +18517,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_flash.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_flash.r51
   PROGRAM MODULE, NAME : hal_flash
 
   SEGMENTS IN THE MODULE
@@ -18581,7 +18581,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_key.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_key.r51
   PROGRAM MODULE, NAME : hal_key
 
   SEGMENTS IN THE MODULE
@@ -18921,7 +18921,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_lcd.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_lcd.r51
   PROGRAM MODULE, NAME : hal_lcd
 
   SEGMENTS IN THE MODULE
@@ -19273,7 +19273,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_led.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_led.r51
   PROGRAM MODULE, NAME : hal_led
 
   SEGMENTS IN THE MODULE
@@ -19302,7 +19302,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_sleep.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_sleep.r51
   PROGRAM MODULE, NAME : hal_sleep
 
   SEGMENTS IN THE MODULE
@@ -19361,7 +19361,7 @@ INTVEC
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_startup.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_startup.r51
   PROGRAM MODULE, NAME : hal_startup
 
   SEGMENTS IN THE MODULE
@@ -19375,10 +19375,10 @@ CSTART
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_timer.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_timer.r51
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_uart.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\hal_uart.r51
   PROGRAM MODULE, NAME : hal_uart
 
   SEGMENTS IN THE MODULE
@@ -19729,7 +19729,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\inch.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\inch.r51
   PROGRAM MODULE, NAME : inch
 
   SEGMENTS IN THE MODULE
@@ -20255,7 +20255,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\myiic.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\myiic.r51
   PROGRAM MODULE, NAME : myiic
 
   SEGMENTS IN THE MODULE
@@ -20269,7 +20269,7 @@ SFR_AN
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\npi.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\npi.r51
   PROGRAM MODULE, NAME : npi
 
   SEGMENTS IN THE MODULE
@@ -20391,7 +20391,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\osal_bufmgr.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\osal_bufmgr.r51
   PROGRAM MODULE, NAME : osal_bufmgr
 
   SEGMENTS IN THE MODULE
@@ -20526,7 +20526,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\osal_cbtimer.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\osal_cbtimer.r51
   PROGRAM MODULE, NAME : osal_cbtimer
 
   SEGMENTS IN THE MODULE
@@ -20647,7 +20647,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\osal_snv.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\osal_snv.r51
   PROGRAM MODULE, NAME : osal_snv
 
   SEGMENTS IN THE MODULE
@@ -21126,7 +21126,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\peripheral.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\peripheral.r51
   PROGRAM MODULE, NAME : peripheral
 
   SEGMENTS IN THE MODULE
@@ -21932,7 +21932,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\simpleBLEPeripheral.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\simpleBLEPeripheral.r51
   PROGRAM MODULE, NAME : simpleBLEPeripheral
 
   SEGMENTS IN THE MODULE
@@ -22370,7 +22370,7 @@ BANK_RELAYS
 
     *************************************************************************
 
-  FILE NAME : E:\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\simpleGATTprofile.r51
+  FILE NAME : C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\CC2540DB\CC2540\Obj\simpleGATTprofile.r51
   PROGRAM MODULE, NAME : simpleGATTprofile
 
   SEGMENTS IN THE MODULE
