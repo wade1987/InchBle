@@ -1,0 +1,4 @@
+---- LED_ON Matches (3 in 2 files) ----
+Inch.c:		/*LED_ON();
+Inch.h:#define LED_ON() LED_INCH = 0
+Inch.h:#define LED_ALL_ON() LED_ON();LED1_ON()
