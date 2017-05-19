@@ -452,6 +452,7 @@ void NodeSwitchProcess(void)
 
 void UploadBLEData(uint8 node_idx)
 {
+	static uint8 tmp_last[NODE_NUM];
 
 	uint8 tmp[2];
 	 switch(node_idx)
@@ -459,52 +460,92 @@ void UploadBLEData(uint8 node_idx)
 		case 0:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE0, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE0, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 1:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE1, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE1, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 2:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE2, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE2, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 3:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE3, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE3, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 4:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE4, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE4, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 5:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE5, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE5, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 6:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE6, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE6, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 7:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE7, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE7, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 8:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE8, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE8, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		case 9:
 			tmp[0] = (uint8)(NodeLen[node_idx] >> 8);
 			tmp[1] = (uint8)NodeLen[node_idx];
-			SimpleProfile_SetParameter( SIMPLEPROFILE_NODE9, SIMPLEPROFILE_NODE_LEN, tmp);
+			if(tmp_last[node_idx] !=tmp[1] )
+			{
+				tmp_last[node_idx]  = tmp[1];
+				SimpleProfile_SetParameter( SIMPLEPROFILE_NODE9, SIMPLEPROFILE_NODE_LEN, tmp);
+			}
 			break;
 		default:
 			;

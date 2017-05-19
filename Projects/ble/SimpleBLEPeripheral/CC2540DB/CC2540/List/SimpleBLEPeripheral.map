@@ -2,7 +2,7 @@
 #                                                                              #
 #      IAR Universal Linker V5.0.2.5/W32                                       #
 #                                                                              #
-#           Link time     =  19/May/2017  11:30:16                             #
+#           Link time     =  19/May/2017  13:19:28                             #
 #           Target CPU    =  x51                                               #
 #           List file     =  C:\Work\InchBle\Projects\ble\SimpleBLEPeripheral\ #
 #                            CC2540DB\CC2540\List\SimpleBLEPeripheral.map      #
@@ -1454,14 +1454,14 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_I
-  Relative segment, address: XDATA 00000B3E - 00000B3E (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B48 - 00000B48 (0x1 bytes), align: 0
   Segment part 6.             Intra module refs:   GAP_ParamsInit
                                                    gapIncSignCounter
                                                    gapProcessRandomAddrComplete
                                                    gapSendDeviceInitDoneEvent
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           gapAppTaskID            00000B3E        gapProcessConnectionCompleteEvt (gap_linkmgr)
+           gapAppTaskID            00000B48        gapProcessConnectionCompleteEvt (gap_linkmgr)
                                                    gapSendLinkUpdateEvent (gap_linkmgr)
     -------------------------------------------------------------------------
 XDATA_Z
@@ -1526,7 +1526,7 @@ XDATA_Z
                                                    gapSendDeviceInitDoneEvent
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B3F - 00000B8A (0x4c bytes), align: 0
+  Relative segment, address: XDATA 00000B49 - 00000B94 (0x4c bytes), align: 0
   Segment part 13.            Intra module refs:   Segment part 22
     -------------------------------------------------------------------------
 XDATA_Z
@@ -2004,43 +2004,43 @@ XDATA_Z
                                                    gapFreeAdvertState (gap_peridevmgr)
                                                    gapSetAdvParams (gap_peridevmgr)
     -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FF0E - 0000FF14 (0x7 bytes), align: 0
+<BANKED_CODE> 2 (was BANKED_CODE)
+  Relative segment, address: CODE 0001A41D - 0001A423 (0x7 bytes), align: 0
   Segment part 8.             Intra module refs:   GAP_ResolvePrivateAddr::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            GAP_ResolvePrivateAddr
-                                   0000FF0E 
+                                   0001A41D 
                calls direct
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FF15 - 0000FF1B (0x7 bytes), align: 0
+<BANKED_CODE> 2 (was BANKED_CODE)
+  Relative segment, address: CODE 0001A424 - 0001A42A (0x7 bytes), align: 0
   Segment part 10.            Intra module refs:   GAP_ResolvePrivateAddr
                                                    gapIsAdvertising
     -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FF1C - 0000FF33 (0x18 bytes), align: 0
+<BANKED_CODE> 2 (was BANKED_CODE)
+  Relative segment, address: CODE 0001A42B - 0001A442 (0x18 bytes), align: 0
   Segment part 11.            Intra module refs:   gapIsAdvertising::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           gapIsAdvertising        0000FF1C 
+           gapIsAdvertising        0001A42B 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FF34 - 0000FF4B (0x18 bytes), align: 0
+<BANKED_CODE> 2 (was BANKED_CODE)
+  Relative segment, address: CODE 0001A443 - 0001A45A (0x18 bytes), align: 0
   Segment part 15.            Intra module refs:   gapValidADType::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           gapValidADType          0000FF34 
+           gapValidADType          0001A443 
                XSTACK = 00000012 ( 00000000 )
     -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FF4C - 0000FFE4 (0x99 bytes), align: 0
+<BANKED_CODE> 2 (was BANKED_CODE)
+  Relative segment, address: CODE 0001A45B - 0001A4F3 (0x99 bytes), align: 0
   Segment part 17.            Intra module refs:   gapFindADType::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           gapFindADType           0000FF4C 
+           gapFindADType           0001A45B 
                calls direct
                XSTACK = 00000002 ( 00000012 )
                ISTACK = 00000000 ( 00000001 )
@@ -2802,7 +2802,7 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_I
-  Relative segment, address: XDATA 00000B8B - 00000B8B (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B95 - 00000B95 (0x1 bytes), align: 0
   Segment part 6.             Intra module refs:   GAP_UpdateAdvertisingData
                                                    gapWriteAdvDataStatus
     -------------------------------------------------------------------------
@@ -2828,7 +2828,7 @@ XDATA_Z
                                                    gapWriteAdvEnableStatus
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B8C - 00000B91 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B96 - 00000B9B (0x6 bytes), align: 0
   Segment part 12.            Intra module refs:   GAP_PeriDevMgrInit
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
@@ -3262,12 +3262,12 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A566 - 0001A5EE (0x89 bytes), align: 0
+  Relative segment, address: CODE 0001A63D - 0001A6C5 (0x89 bytes), align: 0
   Segment part 6.             Intra module refs:   GAP_SendSlaveSecurityRequest::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            GAP_SendSlaveSecurityRequest
-                                   0001A566 
+                                   0001A63D 
                calls direct
                XSTACK = 00000000 ( 00000010 )
     -------------------------------------------------------------------------
@@ -3299,12 +3299,12 @@ XDATA_Z
                                                    gapWriteAdvEnableStatus (gap_peridevmgr)
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B92 - 00000B92 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B9C - 00000B9C (0x1 bytes), align: 0
   Segment part 7.             Intra module refs:   GAP_ProcessEvent
                                                    GAP_RegisterForHCIMsgs
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           gapUnwantedTaskID       00000B92        SM_ProcessEvent (sm_task)
+           gapUnwantedTaskID       00000B9C        SM_ProcessEvent (sm_task)
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 000002AC - 000002AD (0x2 bytes), align: 0
@@ -3523,7 +3523,7 @@ XDATA_Z
   Segment part 7.             Intra module refs:   Segment part 25
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B93 - 00000B93 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B9D - 00000B9D (0x1 bytes), align: 0
   Segment part 8.             Intra module refs:   Segment part 25
     -------------------------------------------------------------------------
 XDATA_Z
@@ -3532,7 +3532,7 @@ XDATA_Z
                                                    Segment part 25
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B94 - 00000B94 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B9E - 00000B9E (0x1 bytes), align: 0
   Segment part 11.            Intra module refs:   Segment part 25
     -------------------------------------------------------------------------
 XDATA_Z
@@ -3541,7 +3541,7 @@ XDATA_Z
                                                    Segment part 25
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B95 - 00000B95 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B9F - 00000B9F (0x1 bytes), align: 0
   Segment part 14.            Intra module refs:   GGS_SetParameter
                                                    Segment part 25
                                                    ggs_WriteAttrCB
@@ -3553,7 +3553,7 @@ XDATA_Z
                                                    ggs_WriteAttrCB
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B96 - 00000B96 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000BA0 - 00000BA0 (0x1 bytes), align: 0
   Segment part 17.            Intra module refs:   Segment part 25
     -------------------------------------------------------------------------
 XDATA_Z
@@ -3562,16 +3562,16 @@ XDATA_Z
                                                    Segment part 25
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B97 - 00000B97 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000BA1 - 00000BA1 (0x1 bytes), align: 0
   Segment part 20.            Intra module refs:   Segment part 25
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000B98 - 00000B9F (0x8 bytes), align: 0
+  Relative segment, address: XDATA 00000BA2 - 00000BA9 (0x8 bytes), align: 0
   Segment part 22.            Intra module refs:   GGS_SetParameter
                                                    Segment part 25
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000BA0 - 00000BF7 (0x58 bytes), align: 0
+  Relative segment, address: XDATA 00000BAA - 00000C01 (0x58 bytes), align: 0
   Segment part 24.            Intra module refs:   GGS_AddService
                                                    GGS_SetParameter
     -------------------------------------------------------------------------
@@ -3813,12 +3813,12 @@ XDATA_Z
            serverInfoTbl           000002D1 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000BF8 - 00000BF8 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C02 - 00000C02 (0x1 bytes), align: 0
   Segment part 7.             Intra module refs:   GATT_RegisterForReq
                                                    gattServerProcessMsgCB
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           reqTaskId               00000BF8 
+           reqTaskId               00000C02 
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 000002D9 - 000002DA (0x2 bytes), align: 0
@@ -3828,7 +3828,7 @@ XDATA_Z
                                                    GATT_ServiceNumAttrs
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000BF9 - 00000BFA (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C03 - 00000C04 (0x2 bytes), align: 0
   Segment part 10.            Intra module refs:   GATT_RegisterService
     -------------------------------------------------------------------------
 <XDATA_ROM_C> 1 (was XDATA_ROM_C)
@@ -4730,12 +4730,12 @@ XDATA_Z
            GATTServApp_TaskID      000002E0 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000BFB - 00000BFB (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C05 - 00000C05 (0x1 bytes), align: 0
   Segment part 7.             Intra module refs:   GATTServApp_RegisterForMsg
                                                    GATTServApp_SendCCCUpdatedEvent
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           appTaskID               00000BFB 
+           appTaskID               00000C05 
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 000002E1 - 000002E4 (0x4 bytes), align: 0
@@ -4789,7 +4789,7 @@ XDATA_Z
   Segment part 15.            Intra module refs:   Segment part 20
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000BFC - 00000BFC (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C06 - 00000C06 (0x1 bytes), align: 0
   Segment part 16.            Intra module refs:   Segment part 20
     -------------------------------------------------------------------------
 XDATA_Z
@@ -4800,7 +4800,7 @@ XDATA_Z
                                                    gattServApp_HandleConnStatusCB
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000BFD - 00000C1C (0x20 bytes), align: 0
+  Relative segment, address: XDATA 00000C07 - 00000C26 (0x20 bytes), align: 0
   Segment part 19.            Intra module refs:   GATTServApp_AddService
     -------------------------------------------------------------------------
 <XDATA_ROM_C> 1 (was XDATA_ROM_C)
@@ -8957,11 +8957,11 @@ XDATA_Z
                                                    llT2OVFC1_ISR (ll_isr)
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C1D - 00000C2A (0xe bytes), align: 0
+  Relative segment, address: XDATA 00000C27 - 00000C34 (0xe bytes), align: 0
   Segment part 50.            Intra module refs:   LL_ProcessEvent
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           taskEndCauses           00000C1D        llAdvEvt_TaskConnect (ll_advEndCauses)
+           taskEndCauses           00000C27        llAdvEvt_TaskConnect (ll_advEndCauses)
                                                    llRestoreConnState (ll_scheduler)
                                                    llSetupDirectedAdvEvt (ll_common)
                                                    llSetupNonConnectableAdvEvt (ll_common)
@@ -8969,11 +8969,11 @@ XDATA_I
                                                    llSetupUndirectedAdvEvt (ll_common)
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C2B - 00000C36 (0xc bytes), align: 0
+  Relative segment, address: XDATA 00000C35 - 00000C40 (0xc bytes), align: 0
   Segment part 52.            Intra module refs:   LL_ProcessEvent
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           taskErrorEndCauses      00000C2B        llAdvEvt_TaskConnect (ll_advEndCauses)
+           taskErrorEndCauses      00000C35        llAdvEvt_TaskConnect (ll_advEndCauses)
                                                    llRestoreConnState (ll_scheduler)
                                                    llSetupDirectedAdvEvt (ll_common)
                                                    llSetupNonConnectableAdvEvt (ll_common)
@@ -14090,7 +14090,7 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_I
-  Relative segment, address: XDATA 00000C37 - 00000C3C (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000C41 - 00000C46 (0x6 bytes), align: 0
   Segment part 6.             Intra module refs:   SM_ResponderInit
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
@@ -15180,51 +15180,51 @@ XDATA_Z
            hciExtTaskID            0000075A 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A5EF - 0001A61A (0x2c bytes), align: 0
+  Relative segment, address: CODE 0001A6C6 - 0001A6F1 (0x2c bytes), align: 0
   Segment part 13.            Intra module refs:   HCI_Init::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HCI_Init                0001A5EF 
+           HCI_Init                0001A6C6 
                calls direct
                XSTACK = 00000000 ( 00000009 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A61B - 0001A647 (0x2d bytes), align: 0
+  Relative segment, address: CODE 0001A6F2 - 0001A71E (0x2d bytes), align: 0
   Segment part 15.            Intra module refs:   HCI_ProcessEvent::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HCI_ProcessEvent        0001A61B 
+           HCI_ProcessEvent        0001A6F2 
                calls direct
                XSTACK = 00000000 ( 0000000A )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A648 - 0001A651 (0xa bytes), align: 0
+  Relative segment, address: CODE 0001A71F - 0001A728 (0xa bytes), align: 0
   Segment part 19.            Intra module refs:   HCI_GAPTaskRegister::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HCI_GAPTaskRegister     0001A648 
+           HCI_GAPTaskRegister     0001A71F 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A652 - 0001A659 (0x8 bytes), align: 0
+  Relative segment, address: CODE 0001A729 - 0001A730 (0x8 bytes), align: 0
   Segment part 21.            Intra module refs:   HCI_L2CAPTaskRegister::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HCI_L2CAPTaskRegister   0001A652 
+           HCI_L2CAPTaskRegister   0001A729 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A65A - 0001A661 (0x8 bytes), align: 0
+  Relative segment, address: CODE 0001A731 - 0001A738 (0x8 bytes), align: 0
   Segment part 23.            Intra module refs:   HCI_GAPTaskRegister
                                                    HCI_L2CAPTaskRegister
                                                    HCI_SMPTaskRegister
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A662 - 0001A66B (0xa bytes), align: 0
+  Relative segment, address: CODE 0001A739 - 0001A742 (0xa bytes), align: 0
   Segment part 24.            Intra module refs:   HCI_SMPTaskRegister::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HCI_SMPTaskRegister     0001A662 
+           HCI_SMPTaskRegister     0001A739 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 BANK_RELAYS
@@ -15283,11 +15283,11 @@ XDATA_Z
            osal_qHead              0000075B 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C3D - 00000C3D (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C47 - 00000C47 (0x1 bytes), align: 0
   Segment part 12.            Intra module refs:   osal_run_system
            LOCAL                   ADDRESS         
            =====                   =======         
-           activeTaskID            00000C3D 
+           activeTaskID            00000C47 
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
   Relative segment, address: CODE 00013EF3 - 00013EFC (0xa bytes), align: 0
@@ -16172,22 +16172,22 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 <XDATA_N> 1 (was XDATA_N)
-  Relative segment, address: XDATA 00000E90 - 00001A8F (0xc00 bytes), align: 0
+  Relative segment, address: XDATA 00000E9A - 00001A99 (0xc00 bytes), align: 0
   Segment part 7.             Intra module refs:   osal_mem_alloc
                                                    osal_mem_init
            LOCAL                   ADDRESS         
            =====                   =======         
-           theHeap                 00000E90 
+           theHeap                 00000E9A 
     -------------------------------------------------------------------------
 <XDATA_N> 1 (was XDATA_N)
-  Relative segment, address: XDATA 00001A90 - 00001A91 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00001A9A - 00001A9B (0x2 bytes), align: 0
   Segment part 8.             Intra module refs:   osal_mem_alloc
                                                    osal_mem_free
                                                    osal_mem_init
                                                    osal_mem_kick
            LOCAL                   ADDRESS         
            =====                   =======         
-           ff1                     00001A90 
+           ff1                     00001A9A 
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 00000767 - 00000767 (0x1 bytes), align: 0
@@ -16322,37 +16322,37 @@ XDATA_Z
            =====                   =======         ======
            pwrmgr_attribute        00000768 
     -------------------------------------------------------------------------
-<BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A66C - 0001A679 (0xe bytes), align: 0
+<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000FF8A - 0000FF97 (0xe bytes), align: 0
   Segment part 7.             Intra module refs:   osal_pwrmgr_init::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           osal_pwrmgr_init        0001A66C 
+           osal_pwrmgr_init        0000FF8A 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
-<BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A67A - 0001A681 (0x8 bytes), align: 0
+<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000FF98 - 0000FF9F (0x8 bytes), align: 0
   Segment part 9.             Intra module refs:   osal_pwrmgr_device
                                                    osal_pwrmgr_init
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine0            0001A67A 
+           ?Subroutine0            0000FF98 
     -------------------------------------------------------------------------
-<BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A682 - 0001A68B (0xa bytes), align: 0
+<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000FFA0 - 0000FFA9 (0xa bytes), align: 0
   Segment part 10.            Intra module refs:   osal_pwrmgr_device::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           osal_pwrmgr_device      0001A682 
+           osal_pwrmgr_device      0000FFA0 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
-<BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A68C - 0001A6D5 (0x4a bytes), align: 0
+<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000FFAA - 0000FFF3 (0x4a bytes), align: 0
   Segment part 12.            Intra module refs:   osal_pwrmgr_task_state::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            osal_pwrmgr_task_state
-                                   0001A68C 
+                                   0000FFAA 
                XSTACK = 00000000 ( 0000000A )
     -------------------------------------------------------------------------
 BANK_RELAYS
@@ -16711,12 +16711,12 @@ XDATA_Z
            OnboardKeyIntEnable     00000777 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C3E - 00000C3E (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C48 - 00000C48 (0x1 bytes), align: 0
   Segment part 8.             Intra module refs:   OnBoard_SendKeys
                                                    RegisterForKeys
            LOCAL                   ADDRESS         
            =====                   =======         
-           registeredKeysTaskID    00000C3E 
+           registeredKeysTaskID    00000C48 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
   Relative segment, address: CODE 00019CD6 - 00019CF3 (0x1e bytes), align: 0
@@ -16869,11 +16869,11 @@ SFR_AN
            CLKCONSTA               0000009E 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A72C - 0001A77E (0x53 bytes), align: 0
+  Relative segment, address: CODE 0001A799 - 0001A7EB (0x53 bytes), align: 0
   Segment part 11.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           main                    0001A72C        ?call_main (?cmain)
+           main                    0001A799        ?call_main (?cmain)
                calls direct
 
     *************************************************************************
@@ -16891,11 +16891,11 @@ XDATA_Z
            devInfoSystemId         00000778 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A82B - 0001A854 (0x2a bytes), align: 0
+  Relative segment, address: CODE 0001A898 - 0001A8C1 (0x2a bytes), align: 0
   Segment part 51.            Intra module refs:   DevInfo_SetParameter::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           DevInfo_SetParameter    0001A82B 
+           DevInfo_SetParameter    0001A898 
                calls direct
                XSTACK = 00000000 ( 0000000D )
     -------------------------------------------------------------------------
@@ -16915,11 +16915,11 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A6D6 - 0001A72B (0x56 bytes), align: 0
+  Relative segment, address: CODE 0001A743 - 0001A798 (0x56 bytes), align: 0
   Segment part 6.             Intra module refs:   GAP_DeviceInit::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           GAP_DeviceInit          0001A6D6 
+           GAP_DeviceInit          0001A743 
                calls direct
                XSTACK = 00000004 ( 00000011 )
     -------------------------------------------------------------------------
@@ -16951,20 +16951,20 @@ XDATA_Z
            gapBondMgr_TaskID       00000780 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C3F - 00000C3F (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C49 - 00000C49 (0x1 bytes), align: 0
   Segment part 8.             Intra module refs:   GAPBondMgr_LinkEst
                                                    GAPBondMgr_ProcessGAPMsg
                                                    GAPBondMgr_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapBond_PairingMode     00000C3F 
+           gapBond_PairingMode     00000C49 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C40 - 00000C41 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C4A - 00000C4B (0x2 bytes), align: 0
   Segment part 10.            Intra module refs:   GAPBondMgr_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapBond_InitiateWait    00000C40 
+           gapBond_InitiateWait    00000C4A 
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 00000781 - 00000781 (0x1 bytes), align: 0
@@ -17017,22 +17017,22 @@ XDATA_Z
            gapBond_AutoFail        00000795 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C42 - 00000C42 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C4C - 00000C4C (0x1 bytes), align: 0
   Segment part 18.            Intra module refs:   GAPBondMgr_ProcessGAPMsg
                                                    GAPBondMgr_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            gapBond_AutoFailReason
-                                   00000C42 
+                                   00000C4C 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C43 - 00000C43 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C4D - 00000C4D (0x1 bytes), align: 0
   Segment part 20.            Intra module refs:   ?Subroutine15
                                                    GAPBondMgr_SetParameter
                                                    gapBondMgrAuthenticate
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapBond_KeyDistList     00000C43 
+           gapBond_KeyDistList     00000C4D 
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 00000796 - 00000799 (0x4 bytes), align: 0
@@ -17043,12 +17043,12 @@ XDATA_Z
            gapBond_Passcode        00000796 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C44 - 00000C44 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C4E - 00000C4E (0x1 bytes), align: 0
   Segment part 23.            Intra module refs:   GAPBondMgr_SetParameter
                                                    gapBondMgrAuthenticate
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapBond_KeySize         00000C44 
+           gapBond_KeySize         00000C4E 
     -------------------------------------------------------------------------
 XDATA_Z
   Relative segment, address: XDATA 0000079A - 0000079B (0x2 bytes), align: 0
@@ -18140,26 +18140,26 @@ XDATA_Z
            adcRef                  0000082C 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A41D - 0001A425 (0x9 bytes), align: 0
+  Relative segment, address: CODE 0001A4F4 - 0001A4FC (0x9 bytes), align: 0
   Segment part 12.            Intra module refs:   HalAdcInit::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HalAdcInit              0001A41D 
+           HalAdcInit              0001A4F4 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A426 - 0001A42D (0x8 bytes), align: 0
+  Relative segment, address: CODE 0001A4FD - 0001A504 (0x8 bytes), align: 0
   Segment part 14.            Intra module refs:   HalAdcInit
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine0            0001A426 
+           ?Subroutine0            0001A4FD 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A42E - 0001A4CD (0xa0 bytes), align: 0
+  Relative segment, address: CODE 0001A505 - 0001A5A4 (0xa0 bytes), align: 0
   Segment part 15.            Intra module refs:   HalAdcRead::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HalAdcRead              0001A42E 
+           HalAdcRead              0001A505 
                XSTACK = 00000000 ( 0000000A )
     -------------------------------------------------------------------------
 BANK_RELAYS
@@ -18230,27 +18230,27 @@ SFR_AN
            DMAARM                  000000D6 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A77F - 0001A7B6 (0x38 bytes), align: 0
+  Relative segment, address: CODE 0001A7EC - 0001A823 (0x38 bytes), align: 0
   Segment part 10.            Intra module refs:   aesDmaInit::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           aesDmaInit              0001A77F 
+           aesDmaInit              0001A7EC 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A7B7 - 0001A7BD (0x7 bytes), align: 0
+  Relative segment, address: CODE 0001A824 - 0001A82A (0x7 bytes), align: 0
   Segment part 16.            Intra module refs:   HalAesInit
                                                    aesDmaInit
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine0            0001A7B7 
+           ?Subroutine0            0001A824 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A7BE - 0001A7C7 (0xa bytes), align: 0
+  Relative segment, address: CODE 0001A82B - 0001A834 (0xa bytes), align: 0
   Segment part 20.            Intra module refs:   HalAesInit::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HalAesInit              0001A7BE 
+           HalAesInit              0001A82B 
                calls direct
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
@@ -18380,12 +18380,12 @@ XDATA_Z
                                                    LL_ENC_LoadEmptyIV (ll_enc)
                                                    aesDmaInit (hal_aes)
     -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FFE5 - 0000FFF7 (0x13 bytes), align: 0
+<BANKED_CODE> 2 (was BANKED_CODE)
+  Relative segment, address: CODE 0001A908 - 0001A91A (0x13 bytes), align: 0
   Segment part 17.            Intra module refs:   HalDmaInit::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HalDmaInit              0000FFE5 
+           HalDmaInit              0001A908 
     -------------------------------------------------------------------------
 NEAR_CODE
   Relative segment, address: CODE 000022BE - 000022E3 (0x26 bytes), align: 0
@@ -18429,46 +18429,46 @@ XDATA_Z
                                                    halProcessKeyInterrupt (hal_key)
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A4CE - 0001A4D6 (0x9 bytes), align: 0
+  Relative segment, address: CODE 0001A5A5 - 0001A5AD (0x9 bytes), align: 0
   Segment part 8.             Intra module refs:   Hal_Init::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           Hal_Init                0001A4CE 
+           Hal_Init                0001A5A5 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A4D7 - 0001A4DD (0x7 bytes), align: 0
+  Relative segment, address: CODE 0001A5AE - 0001A5B4 (0x7 bytes), align: 0
   Segment part 10.            Intra module refs:   HalDriverInit
                                                    Hal_Init
                                                    Hal_ProcessPoll
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine0            0001A4D7 
+           ?Subroutine0            0001A5AE 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A4DE - 0001A4F5 (0x18 bytes), align: 0
+  Relative segment, address: CODE 0001A5B5 - 0001A5CC (0x18 bytes), align: 0
   Segment part 11.            Intra module refs:   HalDriverInit::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           HalDriverInit           0001A4DE 
+           HalDriverInit           0001A5B5 
                calls direct
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A4F6 - 0001A55B (0x66 bytes), align: 0
+  Relative segment, address: CODE 0001A5CD - 0001A632 (0x66 bytes), align: 0
   Segment part 13.            Intra module refs:   Hal_ProcessEvent::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           Hal_ProcessEvent        0001A4F6 
+           Hal_ProcessEvent        0001A5CD 
                calls direct
                XSTACK = 00000000 ( 0000000E )
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A55C - 0001A565 (0xa bytes), align: 0
+  Relative segment, address: CODE 0001A633 - 0001A63C (0xa bytes), align: 0
   Segment part 15.            Intra module refs:   Hal_ProcessPoll::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           Hal_ProcessPoll         0001A55C 
+           Hal_ProcessPoll         0001A633 
                calls direct
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
@@ -19752,7 +19752,7 @@ XDATA_Z
   Relative segment, address: XDATA 000009EB - 000009EB (0x1 bytes), align: 0
   Segment part 29.            Intra module refs:   NodeSwitchProcess
                                                    ParseRxData
-                                                   Segment part 61
+                                                   Segment part 62
            LOCAL                   ADDRESS         
            =====                   =======         
            NodeIdx                 000009EB 
@@ -19818,7 +19818,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000F954 - 0000FA23 (0xd0 bytes), align: 0
-  Segment part 42.            Intra module refs:   ParseRxData::?relay
+  Segment part 43.            Intra module refs:   ParseRxData::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            ParseRxData             0000F954 
@@ -19826,7 +19826,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FA24 - 0000FA28 (0x5 bytes), align: 0
-  Segment part 44.            Intra module refs:   DebugOut
+  Segment part 45.            Intra module refs:   DebugOut
                                                    NodeSwitchProcess
                                                    ParseRxData
            LOCAL                   ADDRESS         
@@ -19842,7 +19842,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FA29 - 0000FA49 (0x21 bytes), align: 0
-  Segment part 45.            Intra module refs:   LedRunningProcess::?relay
+  Segment part 46.            Intra module refs:   LedRunningProcess::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            LedRunningProcess       0000FA29 
@@ -19859,7 +19859,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FA4A - 0000FB13 (0xca bytes), align: 0
-  Segment part 47.            Intra module refs:   DebugOut::?relay
+  Segment part 48.            Intra module refs:   DebugOut::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            DebugOut                0000FA4A 
@@ -19868,14 +19868,14 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB14 - 0000FB28 (0x15 bytes), align: 0
-  Segment part 49.            Intra module refs:   DebugOut
+  Segment part 50.            Intra module refs:   DebugOut
            LOCAL                   ADDRESS         
            =====                   =======         
            ?Subroutine6            0000FB14 
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB29 - 0000FB2E (0x6 bytes), align: 0
-  Segment part 50.            Intra module refs:   DebugOut
+  Segment part 51.            Intra module refs:   DebugOut
            LOCAL                   ADDRESS         
            =====                   =======         
            ?Subroutine3            0000FB29 
@@ -19890,7 +19890,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB2F - 0000FB48 (0x1a bytes), align: 0
-  Segment part 51.            Intra module refs:   DebugOutProcess::?relay
+  Segment part 52.            Intra module refs:   DebugOutProcess::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            DebugOutProcess         0000FB2F 
@@ -19900,7 +19900,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB49 - 0000FB53 (0xb bytes), align: 0
-  Segment part 53.            Intra module refs:   DisableNodeDec
+  Segment part 54.            Intra module refs:   DisableNodeDec
                                                    EnableNodeDec
            LOCAL                   ADDRESS         
            =====                   =======         
@@ -19908,7 +19908,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB54 - 0000FB5A (0x7 bytes), align: 0
-  Segment part 54.            Intra module refs:   ?Subroutine1
+  Segment part 55.            Intra module refs:   ?Subroutine1
                                                    DebugOutProcess
                                                    InchMainTmrTick
                                                    KeyDetectProcess
@@ -19916,7 +19916,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB5B - 0000FB92 (0x38 bytes), align: 0
-  Segment part 55.            Intra module refs:   SN74HC595_OUT::?relay
+  Segment part 56.            Intra module refs:   SN74HC595_OUT::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            SN74HC595_OUT           0000FB5B 
@@ -19925,7 +19925,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FB93 - 0000FBA3 (0x11 bytes), align: 0
-  Segment part 57.            Intra module refs:   EnableNodeDec::?relay
+  Segment part 58.            Intra module refs:   EnableNodeDec::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            EnableNodeDec           0000FB93 
@@ -19934,7 +19934,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FBA4 - 0000FBAF (0xc bytes), align: 0
-  Segment part 59.            Intra module refs:   EnableNodeDec
+  Segment part 60.            Intra module refs:   EnableNodeDec
                                                    NodeSwitchProcess
            LOCAL                   ADDRESS         
            =====                   =======         
@@ -19942,17 +19942,17 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FBB0 - 0000FBB1 (0x2 bytes), align: 0
-  Segment part 60.            Intra module refs:   ?Subroutine5
+  Segment part 61.            Intra module refs:   ?Subroutine5
                                                    NodeSwitchProcess
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FBB2 - 0000FBB8 (0x7 bytes), align: 0
-  Segment part 61.            Intra module refs:   NodeSwitchProcess
-                                                   Segment part 60
+  Segment part 62.            Intra module refs:   NodeSwitchProcess
+                                                   Segment part 61
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FBB9 - 0000FBCB (0x13 bytes), align: 0
-  Segment part 62.            Intra module refs:   DisableNodeDec::?relay
+  Segment part 63.            Intra module refs:   DisableNodeDec::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            DisableNodeDec          0000FBB9 
@@ -19962,7 +19962,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FBCC - 0000FC27 (0x5c bytes), align: 0
-  Segment part 64.            Intra module refs:   KeyDetectProcess::?relay
+  Segment part 65.            Intra module refs:   KeyDetectProcess::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            KeyDetectProcess        0000FBCC 
@@ -19972,7 +19972,7 @@ XDATA_Z
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000FC28 - 0000FD4D (0x126 bytes), align: 0
-  Segment part 66.            Intra module refs:   NodeSwitchProcess::?relay
+  Segment part 67.            Intra module refs:   NodeSwitchProcess::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            NodeSwitchProcess       0000FC28 
@@ -19980,8 +19980,8 @@ XDATA_Z
                XSTACK = 0000000C ( 0000008A )
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FD4E - 0000FE3A (0xed bytes), align: 0
-  Segment part 68.            Intra module refs:   UploadBLEData::?relay
+  Relative segment, address: CODE 0000FD4E - 0000FEB6 (0x169 bytes), align: 0
+  Segment part 69.            Intra module refs:   UploadBLEData::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            UploadBLEData           0000FD4E 
@@ -19990,61 +19990,64 @@ XDATA_Z
                ISTACK = 00000000 ( 00000001 )
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FE3B - 0000FE3B (0x1 bytes), align: 0
-  Segment part 70.            Intra module refs:   UploadBLEData
+  Relative segment, address: CODE 0000FEB7 - 0000FEC5 (0xf bytes), align: 0
+  Segment part 71.            Intra module refs:   UploadBLEData
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine4            0000FE3B 
+           ?Subroutine4            0000FEB7 
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FE3C - 0000FE49 (0xe bytes), align: 0
-  Segment part 71.            Intra module refs:   ?Subroutine4
-                                                   UploadBLEData
-    -------------------------------------------------------------------------
-<BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FE4A - 0000FE52 (0x9 bytes), align: 0
+  Relative segment, address: CODE 0000FEC6 - 0000FECE (0x9 bytes), align: 0
   Segment part 72.            Intra module refs:   UploadBLEData
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine2            0000FE4A 
+           ?Subroutine2            0000FEC6 
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FE53 - 0000FE5B (0x9 bytes), align: 0
+  Relative segment, address: CODE 0000FECF - 0000FED7 (0x9 bytes), align: 0
   Segment part 73.            Intra module refs:   ?Subroutine2
                                                    UploadBLEData
            LOCAL                   ADDRESS         
            =====                   =======         
-           ?Subroutine7            0000FE53 
+           ?Subroutine7            0000FECF 
+    -------------------------------------------------------------------------
+XDATA_Z
+  Relative segment, address: XDATA 00000A0B - 00000A14 (0xa bytes), align: 0
+  Segment part 40.            Intra module refs:   UploadBLEData
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           UploadBLEData::tmp_last
+                                   00000A0B 
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FE5C - 0000FE6E (0x13 bytes), align: 0
+  Relative segment, address: CODE 0000FED8 - 0000FEEA (0x13 bytes), align: 0
   Segment part 74.            Intra module refs:   InchMainTmrTick::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           InchMainTmrTick         0000FE5C 
+           InchMainTmrTick         0000FED8 
                XSTACK = 0000000C ( 00000000 )
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
-  Relative segment, address: CODE 0000FE6F - 0000FF0D (0x9f bytes), align: 0
+  Relative segment, address: CODE 0000FEEB - 0000FF89 (0x9f bytes), align: 0
   Segment part 76.            Intra module refs:   InchMain::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           InchMain                0000FE6F 
+           InchMain                0000FEEB 
                calls direct
                XSTACK = 00000000 ( 0000000C )
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 00001272 - 00001277 (0x6 bytes), align: 0
-  Segment part 43.
+  Segment part 44.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            ParseRxData::?relay     00001272        NpiSerialCallback (simpleBLEPeripheral)
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 00001278 - 0000127D (0x6 bytes), align: 0
-  Segment part 46.            Intra module refs:   InchMain
+  Segment part 47.            Intra module refs:   InchMain
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            LedRunningProcess::?relay
@@ -20052,14 +20055,14 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 0000127E - 00001283 (0x6 bytes), align: 0
-  Segment part 48.            Intra module refs:   DebugOutProcess
+  Segment part 49.            Intra module refs:   DebugOutProcess
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            DebugOut::?relay        0000127E 
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 00001284 - 00001289 (0x6 bytes), align: 0
-  Segment part 52.            Intra module refs:   InchMain
+  Segment part 53.            Intra module refs:   InchMain
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            DebugOutProcess::?relay
@@ -20067,22 +20070,22 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 0000128A - 0000128F (0x6 bytes), align: 0
-  Segment part 56.            Intra module refs:   DisableNodeDec
-                                                   Segment part 61
+  Segment part 57.            Intra module refs:   DisableNodeDec
+                                                   Segment part 62
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            SN74HC595_OUT::?relay   0000128A 
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 00001290 - 00001295 (0x6 bytes), align: 0
-  Segment part 58.            Intra module refs:   KeyDetectProcess
+  Segment part 59.            Intra module refs:   KeyDetectProcess
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            EnableNodeDec::?relay   00001290 
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 00001296 - 0000129B (0x6 bytes), align: 0
-  Segment part 63.            Intra module refs:   InchMain
+  Segment part 64.            Intra module refs:   InchMain
                                                    KeyDetectProcess
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
@@ -20091,7 +20094,7 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 0000129C - 000012A1 (0x6 bytes), align: 0
-  Segment part 65.            Intra module refs:   InchMain
+  Segment part 66.            Intra module refs:   InchMain
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            KeyDetectProcess::?relay
@@ -20099,7 +20102,7 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 000012A2 - 000012A7 (0x6 bytes), align: 0
-  Segment part 67.            Intra module refs:   InchMain
+  Segment part 68.            Intra module refs:   InchMain
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            NodeSwitchProcess::?relay
@@ -20107,7 +20110,7 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 BANK_RELAYS
   Relative segment, address: CODE 000012A8 - 000012AD (0x6 bytes), align: 0
-  Segment part 69.
+  Segment part 70.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            UploadBLEData::?relay   000012A8        NpiSerialCallback (simpleBLEPeripheral)
@@ -20177,7 +20180,7 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 <XDATA_ROM_C> 1 (was XDATA_ROM_C)
   Relative segment, address: CONST 0000820A - 0000820D (0x4 bytes), align: 0
-  Segment part 40.            Intra module refs:   InchMain
+  Segment part 41.            Intra module refs:   InchMain
                                                    LL_ENC_Decrypt (ll_enc)
                                                    LL_ENC_Encrypt (ll_enc)
                                                    LL_TxData (ll)
@@ -20190,7 +20193,7 @@ BANK_RELAYS
     -------------------------------------------------------------------------
 <XDATA_ROM_C> 1 (was XDATA_ROM_C)
   Relative segment, address: CONST 00008206 - 00008209 (0x4 bytes), align: 0
-  Segment part 41.            Intra module refs:   InchMain
+  Segment part 42.            Intra module refs:   InchMain
                                                    LL_TxData (ll)
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
@@ -20396,14 +20399,14 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_Z
-  Relative segment, address: XDATA 00000A0B - 00000A0C (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000A15 - 00000A16 (0x2 bytes), align: 0
   Segment part 6.             Intra module refs:   ?Subroutine4
                                                    bm_desc_from_payload
                                                    osal_bm_alloc
                                                    osal_bm_free
            LOCAL                   ADDRESS         
            =====                   =======         
-           bm_list_ptr             00000A0B 
+           bm_list_ptr             00000A15 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
   Relative segment, address: CODE 00019B3E - 00019B8F (0x52 bytes), align: 0
@@ -20531,23 +20534,23 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_I
-  Relative segment, address: XDATA 00000C45 - 00000C46 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C4F - 00000C50 (0x2 bytes), align: 0
   Segment part 6.             Intra module refs:   osal_CbTimerInit
                                                    osal_CbTimerProcessEvent
                                                    osal_CbTimerStart
                                                    osal_CbTimerStop
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           baseTaskID              00000C45 
+           baseTaskID              00000C4F 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A0D - 00000A48 (0x3c bytes), align: 0
+  Relative segment, address: XDATA 00000A17 - 00000A52 (0x3c bytes), align: 0
   Segment part 8.             Intra module refs:   ?Subroutine1
                                                    osal_CbTimerInit
                                                    osal_CbTimerStop
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           cbTimers                00000A0D 
+           cbTimers                00000A17 
     -------------------------------------------------------------------------
 <BANKED_CODE> 2 (was BANKED_CODE)
   Relative segment, address: CODE 0001939A - 000193C3 (0x2a bytes), align: 0
@@ -20659,7 +20662,7 @@ BLENV_ADDRESS_SPACE
            _nvBuf                  0003E800 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A49 - 00000A49 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000A53 - 00000A53 (0x1 bytes), align: 0
   Segment part 7.             Intra module refs:   ?Subroutine11
                                                    ?Subroutine12
                                                    Segment part 48
@@ -20668,10 +20671,10 @@ XDATA_Z
                                                    setXferPage
            LOCAL                   ADDRESS         
            =====                   =======         
-           activePg                00000A49 
+           activePg                00000A53 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A4A - 00000A4B (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000A54 - 00000A55 (0x2 bytes), align: 0
   Segment part 8.             Intra module refs:   ?Subroutine12
                                                    compactPage
                                                    findOffset
@@ -20680,10 +20683,10 @@ XDATA_Z
                                                    osal_snv_write
            LOCAL                   ADDRESS         
            =====                   =======         
-           pgOff                   00000A4A 
+           pgOff                   00000A54 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A4C - 00000A4C (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000A56 - 00000A56 (0x1 bytes), align: 0
   Segment part 9.             Intra module refs:   compactPage
                                                    erasePage
                                                    initNV
@@ -20694,7 +20697,7 @@ XDATA_Z
                                                    writeWord
            LOCAL                   ADDRESS         
            =====                   =======         
-           failF                   00000A4C 
+           failF                   00000A56 
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
   Relative segment, address: CODE 000136BD - 00013788 (0xcc bytes), align: 0
@@ -21131,7 +21134,7 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_Z
-  Relative segment, address: XDATA 00000A4D - 00000A4D (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000A57 - 00000A57 (0x1 bytes), align: 0
   Segment part 6.             Intra module refs:   ?Subroutine17
                                                    GAPRole_Init
                                                    GAPRole_ProcessEvent
@@ -21144,10 +21147,10 @@ XDATA_Z
                                                    gapRole_startConnUpdate
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_TaskID          00000A4D 
+           gapRole_TaskID          00000A57 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A4E - 00000A4E (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000A58 - 00000A58 (0x1 bytes), align: 0
   Segment part 7.             Intra module refs:   GAPRole_Init
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SendUpdateParam
@@ -21158,19 +21161,19 @@ XDATA_Z
                                                    gapRole_ProcessOSALMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_state           00000A4E 
+           gapRole_state           00000A58 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A4F - 00000A4F (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000A59 - 00000A59 (0x1 bytes), align: 0
   Segment part 8.             Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_StartDevice
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_profileRole     00000A4F 
+           gapRole_profileRole     00000A59 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A50 - 00000A5F (0x10 bytes), align: 0
+  Relative segment, address: XDATA 00000A5A - 00000A69 (0x10 bytes), align: 0
   Segment part 9.             Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_SetParameter
@@ -21178,10 +21181,10 @@ XDATA_Z
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_IRK             00000A50 
+           gapRole_IRK             00000A5A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A60 - 00000A6F (0x10 bytes), align: 0
+  Relative segment, address: XDATA 00000A6A - 00000A79 (0x10 bytes), align: 0
   Segment part 10.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_SetParameter
@@ -21189,10 +21192,10 @@ XDATA_Z
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_SRK             00000A60 
+           gapRole_SRK             00000A6A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A70 - 00000A73 (0x4 bytes), align: 0
+  Relative segment, address: XDATA 00000A7A - 00000A7D (0x4 bytes), align: 0
   Segment part 11.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_ProcessEvent
@@ -21200,113 +21203,113 @@ XDATA_Z
                                                    GAPRole_StartDevice
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_signCounter     00000A70 
+           gapRole_signCounter     00000A7A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A74 - 00000A79 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000A7E - 00000A83 (0x6 bytes), align: 0
   Segment part 12.            Intra module refs:   GAPRole_GetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_bdAddr          00000A74 
+           gapRole_bdAddr          00000A7E 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C47 - 00000C47 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C51 - 00000C51 (0x1 bytes), align: 0
   Segment part 13.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvEnabled      00000C47 
+           gapRole_AdvEnabled      00000C51 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C48 - 00000C49 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C52 - 00000C53 (0x2 bytes), align: 0
   Segment part 15.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvertOffTime   00000C48 
+           gapRole_AdvertOffTime   00000C52 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C4A - 00000C4A (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000C54 - 00000C54 (0x1 bytes), align: 0
   Segment part 17.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvertDataLen   00000C4A 
+           gapRole_AdvertDataLen   00000C54 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C4B - 00000C69 (0x1f bytes), align: 0
+  Relative segment, address: XDATA 00000C55 - 00000C73 (0x1f bytes), align: 0
   Segment part 19.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvertData      00000C4B 
+           gapRole_AdvertData      00000C55 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A7A - 00000A7A (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000A84 - 00000A84 (0x1 bytes), align: 0
   Segment part 21.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_ScanRspDataLen
-                                   00000A7A 
+                                   00000A84 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A7B - 00000A99 (0x1f bytes), align: 0
+  Relative segment, address: XDATA 00000A85 - 00000AA3 (0x1f bytes), align: 0
   Segment part 22.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_ScanRspData     00000A7B 
+           gapRole_ScanRspData     00000A85 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A9A - 00000A9A (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AA4 - 00000AA4 (0x1 bytes), align: 0
   Segment part 23.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvEventType    00000A9A 
+           gapRole_AdvEventType    00000AA4 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A9B - 00000A9B (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AA5 - 00000AA5 (0x1 bytes), align: 0
   Segment part 24.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvDirectType   00000A9B 
+           gapRole_AdvDirectType   00000AA5 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000A9C - 00000AA1 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000AA6 - 00000AAB (0x6 bytes), align: 0
   Segment part 25.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvDirectAddr   00000A9C 
+           gapRole_AdvDirectAddr   00000AA6 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AA2 - 00000AA2 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AAC - 00000AAC (0x1 bytes), align: 0
   Segment part 26.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_AdvChanMap      00000AA2 
+           gapRole_AdvChanMap      00000AAC 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AA3 - 00000AA3 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AAD - 00000AAD (0x1 bytes), align: 0
   Segment part 27.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_Init
                                                    GAPRole_ProcessEvent
@@ -21314,10 +21317,10 @@ XDATA_Z
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_AdvFilterPolicy
-                                   00000AA3 
+                                   00000AAD 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C6A - 00000C6B (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C74 - 00000C75 (0x2 bytes), align: 0
   Segment part 28.            Intra module refs:   ?Subroutine13
                                                    GAPRole_GetParameter
                                                    GAPRole_Init
@@ -21325,39 +21328,39 @@ XDATA_I
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_ConnectionHandle
-                                   00000C6A 
+                                   00000C74 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AA4 - 00000AA5 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AAE - 00000AAF (0x2 bytes), align: 0
   Segment part 30.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_RSSIReadRate    00000AA4 
+           gapRole_RSSIReadRate    00000AAE 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AA6 - 00000AAB (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000AB0 - 00000AB5 (0x6 bytes), align: 0
   Segment part 31.            Intra module refs:   GAPRole_GetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_ConnectedDevAddr
-                                   00000AA6 
+                                   00000AB0 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AAC - 00000AAC (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AB6 - 00000AB6 (0x1 bytes), align: 0
   Segment part 32.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_SetParameter
                                                    gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_ParamUpdateEnable
-                                   00000AAC 
+                                   00000AB6 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C6C - 00000C6D (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C76 - 00000C77 (0x2 bytes), align: 0
   Segment part 33.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SendUpdateParam
@@ -21366,10 +21369,10 @@ XDATA_I
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_MinConnInterval
-                                   00000C6C 
+                                   00000C76 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C6E - 00000C6F (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C78 - 00000C79 (0x2 bytes), align: 0
   Segment part 35.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SendUpdateParam
@@ -21378,10 +21381,10 @@ XDATA_I
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_MaxConnInterval
-                                   00000C6E 
+                                   00000C78 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AAD - 00000AAE (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AB7 - 00000AB8 (0x2 bytes), align: 0
   Segment part 37.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SendUpdateParam
@@ -21389,10 +21392,10 @@ XDATA_Z
                                                    gapRole_startConnUpdate
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_SlaveLatency    00000AAD 
+           gapRole_SlaveLatency    00000AB7 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C70 - 00000C71 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000C7A - 00000C7B (0x2 bytes), align: 0
   Segment part 38.            Intra module refs:   GAPRole_GetParameter
                                                    GAPRole_ProcessEvent
                                                    GAPRole_SendUpdateParam
@@ -21401,20 +21404,20 @@ XDATA_I
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_TimeoutMultiplier
-                                   00000C70 
+                                   00000C7A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AAF - 00000AB0 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AB9 - 00000ABA (0x2 bytes), align: 0
   Segment part 40.            Intra module refs:   ?Subroutine8
                                                    GAPRole_GetParameter
                                                    gapRole_ProcessGAPMsg
                                                    gapRole_startConnUpdate
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_ConnInterval    00000AAF 
+           gapRole_ConnInterval    00000AB9 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AB1 - 00000AB2 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000ABB - 00000ABC (0x2 bytes), align: 0
   Segment part 41.            Intra module refs:   ?Subroutine9
                                                    GAPRole_GetParameter
                                                    gapRole_ProcessGAPMsg
@@ -21422,44 +21425,44 @@ XDATA_Z
            LOCAL                   ADDRESS         
            =====                   =======         
            gapRole_ConnSlaveLatency
-                                   00000AB1 
+                                   00000ABB 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AB3 - 00000AB4 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000ABD - 00000ABE (0x2 bytes), align: 0
   Segment part 42.            Intra module refs:   ?Subroutine10
                                                    GAPRole_GetParameter
                                                    gapRole_ProcessGAPMsg
                                                    gapRole_startConnUpdate
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapRole_ConnTimeout     00000AB3 
+           gapRole_ConnTimeout     00000ABD 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AB5 - 00000AB5 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000ABF - 00000ABF (0x1 bytes), align: 0
   Segment part 43.            Intra module refs:   GAPRole_ProcessEvent
                                                    gapRole_ProcessOSALMsg
                                                    gapRole_startConnUpdate
            LOCAL                   ADDRESS         
            =====                   =======         
            paramUpdateNoSuccessOption
-                                   00000AB5 
+                                   00000ABF 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AB6 - 00000AB7 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AC0 - 00000AC1 (0x2 bytes), align: 0
   Segment part 44.            Intra module refs:   ?Subroutine5
                                                    GAPRole_StartDevice
                                                    gapRole_ProcessOSALMsg
            LOCAL                   ADDRESS         
            =====                   =======         
-           pGapRoles_AppCGs        00000AB6 
+           pGapRoles_AppCGs        00000AC0 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AB8 - 00000AB9 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AC2 - 00000AC3 (0x2 bytes), align: 0
   Segment part 45.            Intra module refs:   gapRole_ProcessGAPMsg
            LOCAL                   ADDRESS         
            =====                   =======         
            pGapRoles_ParamUpdateCB
-                                   00000AB8 
+                                   00000AC2 
     -------------------------------------------------------------------------
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0000EC65 - 0000EF65 (0x301 bytes), align: 0
@@ -21937,65 +21940,65 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 XDATA_Z
-  Relative segment, address: XDATA 00000ABA - 00000ABA (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AC4 - 00000AC4 (0x1 bytes), align: 0
   Segment part 26.            Intra module refs:   SimpleBLEPeripheral_Init
                                                    SimpleBLEPeripheral_ProcessEvent
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleBLEPeripheral_TaskID
-                                   00000ABA 
+                                   00000AC4 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000ABB - 00000ABB (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000AC5 - 00000AC5 (0x1 bytes), align: 0
   Segment part 27.            Intra module refs:   peripheralStateNotificationCB
            LOCAL                   ADDRESS         
            =====                   =======         
-           gapProfileState         00000ABB 
+           gapProfileState         00000AC5 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C72 - 00000C8F (0x1e bytes), align: 0
+  Relative segment, address: XDATA 00000C7C - 00000C99 (0x1e bytes), align: 0
   Segment part 28.            Intra module refs:   SimpleBLEPeripheral_Init
            LOCAL                   ADDRESS         
            =====                   =======         
-           scanRspData             00000C72 
+           scanRspData             00000C7C 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C90 - 00000C96 (0x7 bytes), align: 0
+  Relative segment, address: XDATA 00000C9A - 00000CA0 (0x7 bytes), align: 0
   Segment part 30.            Intra module refs:   SimpleBLEPeripheral_Init
            LOCAL                   ADDRESS         
            =====                   =======         
-           advertData              00000C90 
+           advertData              00000C9A 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000C97 - 00000CAB (0x15 bytes), align: 0
+  Relative segment, address: XDATA 00000CA1 - 00000CB5 (0x15 bytes), align: 0
   Segment part 32.            Intra module refs:   SimpleBLEPeripheral_Init
            LOCAL                   ADDRESS         
            =====                   =======         
-           attDeviceName           00000C97 
+           attDeviceName           00000CA1 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CAC - 00000CAF (0x4 bytes), align: 0
+  Relative segment, address: XDATA 00000CB6 - 00000CB9 (0x4 bytes), align: 0
   Segment part 34.            Intra module refs:   SimpleBLEPeripheral_ProcessEvent
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleBLEPeripheral_PeripheralCBs
-                                   00000CAC 
+                                   00000CB6 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000ABC - 00000ABF (0x4 bytes), align: 0
+  Relative segment, address: XDATA 00000AC6 - 00000AC9 (0x4 bytes), align: 0
   Segment part 36.            Intra module refs:   SimpleBLEPeripheral_ProcessEvent
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleBLEPeripheral_BondMgrCBs
-                                   00000ABC 
+                                   00000AC6 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CB0 - 00000CB1 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000CBA - 00000CBB (0x2 bytes), align: 0
   Segment part 37.            Intra module refs:   SimpleBLEPeripheral_Init
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleBLEPeripheral_SimpleProfileCBs
-                                   00000CB0 
+                                   00000CBA 
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
   Relative segment, address: CODE 0001554D - 00015590 (0x44 bytes), align: 0
@@ -22007,11 +22010,11 @@ XDATA_I
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AC0 - 00000ACE (0xf bytes), align: 0
+  Relative segment, address: XDATA 00000ACA - 00000AD8 (0xf bytes), align: 0
   Segment part 39.            Intra module refs:   OwnAddr2Str
            LOCAL                   ADDRESS         
            =====                   =======         
-           OwnAddr2Str::str        00000AC0 
+           OwnAddr2Str::str        00000ACA 
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
   Relative segment, address: CODE 00015591 - 00015998 (0x408 bytes), align: 0
@@ -22107,11 +22110,11 @@ XDATA_Z
            ?Subroutine4            00015BB5 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000ACF - 00000ADD (0xf bytes), align: 0
+  Relative segment, address: XDATA 00000AD9 - 00000AE7 (0xf bytes), align: 0
   Segment part 40.            Intra module refs:   bdAddr2Str
            LOCAL                   ADDRESS         
            =====                   =======         
-           bdAddr2Str::str         00000ACF 
+           bdAddr2Str::str         00000AD9 
     -------------------------------------------------------------------------
 <BANKED_CODE> 1 (was BANKED_CODE)
   Relative segment, address: CODE 00015BD0 - 00015C17 (0x48 bytes), align: 0
@@ -22478,11 +22481,11 @@ BANK_RELAYS
                                    00008281 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000ADE - 00000ADF (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AE8 - 00000AE9 (0x2 bytes), align: 0
   Segment part 19.            Intra module refs:   SimpleProfile_RegisterAppCBs
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfile_AppCBs    00000ADE 
+           simpleProfile_AppCBs    00000AE8 
     -------------------------------------------------------------------------
 <XDATA_ROM_C> 1 (was XDATA_ROM_C)
   Relative segment, address: CONST 00008250 - 00008252 (0x3 bytes), align: 0
@@ -22492,353 +22495,353 @@ XDATA_Z
            simpleProfileService    00008250 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CB2 - 00000CB2 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CBC - 00000CBC (0x1 bytes), align: 0
   Segment part 21.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode0Props
-                                   00000CB2 
+                                   00000CBC 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AE0 - 00000AE1 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AEA - 00000AEB (0x2 bytes), align: 0
   Segment part 23.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode0      00000AE0 
+           simpleProfileNode0      00000AEA 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AE2 - 00000AE7 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000AEC - 00000AF1 (0x6 bytes), align: 0
   Segment part 24.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode0Config
-                                   00000AE2 
+                                   00000AEC 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CB3 - 00000CB8 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CBD - 00000CC2 (0x6 bytes), align: 0
   Segment part 25.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode0UserDesp
-                                   00000CB3 
+                                   00000CBD 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CB9 - 00000CB9 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CC3 - 00000CC3 (0x1 bytes), align: 0
   Segment part 27.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode1Props
-                                   00000CB9 
+                                   00000CC3 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AE8 - 00000AE9 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AF2 - 00000AF3 (0x2 bytes), align: 0
   Segment part 29.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode1      00000AE8 
+           simpleProfileNode1      00000AF2 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AEA - 00000AEF (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000AF4 - 00000AF9 (0x6 bytes), align: 0
   Segment part 30.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode1Config
-                                   00000AEA 
+                                   00000AF4 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CBA - 00000CBF (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CC4 - 00000CC9 (0x6 bytes), align: 0
   Segment part 31.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode1UserDesp
-                                   00000CBA 
+                                   00000CC4 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CC0 - 00000CC0 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CCA - 00000CCA (0x1 bytes), align: 0
   Segment part 33.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode2Props
-                                   00000CC0 
+                                   00000CCA 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AF0 - 00000AF1 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000AFA - 00000AFB (0x2 bytes), align: 0
   Segment part 35.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode2      00000AF0 
+           simpleProfileNode2      00000AFA 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AF2 - 00000AF7 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000AFC - 00000B01 (0x6 bytes), align: 0
   Segment part 36.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode2Config
-                                   00000AF2 
+                                   00000AFC 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CC1 - 00000CC6 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CCB - 00000CD0 (0x6 bytes), align: 0
   Segment part 37.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode2UserDesp
-                                   00000CC1 
+                                   00000CCB 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CC7 - 00000CC7 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CD1 - 00000CD1 (0x1 bytes), align: 0
   Segment part 39.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode3Props
-                                   00000CC7 
+                                   00000CD1 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AF8 - 00000AF9 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B02 - 00000B03 (0x2 bytes), align: 0
   Segment part 41.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode3      00000AF8 
+           simpleProfileNode3      00000B02 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000AFA - 00000AFF (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B04 - 00000B09 (0x6 bytes), align: 0
   Segment part 42.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode3Config
-                                   00000AFA 
+                                   00000B04 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CC8 - 00000CCD (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CD2 - 00000CD7 (0x6 bytes), align: 0
   Segment part 43.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode3UserDesp
-                                   00000CC8 
+                                   00000CD2 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CCE - 00000CCE (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CD8 - 00000CD8 (0x1 bytes), align: 0
   Segment part 45.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode4Props
-                                   00000CCE 
+                                   00000CD8 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B00 - 00000B01 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B0A - 00000B0B (0x2 bytes), align: 0
   Segment part 47.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode4      00000B00 
+           simpleProfileNode4      00000B0A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B02 - 00000B07 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B0C - 00000B11 (0x6 bytes), align: 0
   Segment part 48.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode4Config
-                                   00000B02 
+                                   00000B0C 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CCF - 00000CD4 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CD9 - 00000CDE (0x6 bytes), align: 0
   Segment part 49.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode4UserDesp
-                                   00000CCF 
+                                   00000CD9 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CD5 - 00000CD5 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CDF - 00000CDF (0x1 bytes), align: 0
   Segment part 51.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode5Props
-                                   00000CD5 
+                                   00000CDF 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B08 - 00000B09 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B12 - 00000B13 (0x2 bytes), align: 0
   Segment part 53.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode5      00000B08 
+           simpleProfileNode5      00000B12 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B0A - 00000B0F (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B14 - 00000B19 (0x6 bytes), align: 0
   Segment part 54.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode5Config
-                                   00000B0A 
+                                   00000B14 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CD6 - 00000CDB (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CE0 - 00000CE5 (0x6 bytes), align: 0
   Segment part 55.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode5UserDesp
-                                   00000CD6 
+                                   00000CE0 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CDC - 00000CDC (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CE6 - 00000CE6 (0x1 bytes), align: 0
   Segment part 57.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode6Props
-                                   00000CDC 
+                                   00000CE6 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B10 - 00000B11 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B1A - 00000B1B (0x2 bytes), align: 0
   Segment part 59.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode6      00000B10 
+           simpleProfileNode6      00000B1A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B12 - 00000B17 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B1C - 00000B21 (0x6 bytes), align: 0
   Segment part 60.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode6Config
-                                   00000B12 
+                                   00000B1C 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CDD - 00000CE2 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CE7 - 00000CEC (0x6 bytes), align: 0
   Segment part 61.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode6UserDesp
-                                   00000CDD 
+                                   00000CE7 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CE3 - 00000CE3 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CED - 00000CED (0x1 bytes), align: 0
   Segment part 63.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode7Props
-                                   00000CE3 
+                                   00000CED 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B18 - 00000B19 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B22 - 00000B23 (0x2 bytes), align: 0
   Segment part 65.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode7      00000B18 
+           simpleProfileNode7      00000B22 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B1A - 00000B1F (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B24 - 00000B29 (0x6 bytes), align: 0
   Segment part 66.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode7Config
-                                   00000B1A 
+                                   00000B24 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CE4 - 00000CE9 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CEE - 00000CF3 (0x6 bytes), align: 0
   Segment part 67.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode7UserDesp
-                                   00000CE4 
+                                   00000CEE 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CEA - 00000CEA (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CF4 - 00000CF4 (0x1 bytes), align: 0
   Segment part 69.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode8Props
-                                   00000CEA 
+                                   00000CF4 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B20 - 00000B21 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B2A - 00000B2B (0x2 bytes), align: 0
   Segment part 71.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode8      00000B20 
+           simpleProfileNode8      00000B2A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B22 - 00000B27 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B2C - 00000B31 (0x6 bytes), align: 0
   Segment part 72.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode8Config
-                                   00000B22 
+                                   00000B2C 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CEB - 00000CF0 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CF5 - 00000CFA (0x6 bytes), align: 0
   Segment part 73.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode8UserDesp
-                                   00000CEB 
+                                   00000CF5 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CF1 - 00000CF1 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000CFB - 00000CFB (0x1 bytes), align: 0
   Segment part 75.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode9Props
-                                   00000CF1 
+                                   00000CFB 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B28 - 00000B29 (0x2 bytes), align: 0
+  Relative segment, address: XDATA 00000B32 - 00000B33 (0x2 bytes), align: 0
   Segment part 77.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileNode9      00000B28 
+           simpleProfileNode9      00000B32 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B2A - 00000B2F (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B34 - 00000B39 (0x6 bytes), align: 0
   Segment part 78.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode9Config
-                                   00000B2A 
+                                   00000B34 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CF2 - 00000CF7 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000CFC - 00000D01 (0x6 bytes), align: 0
   Segment part 79.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileNode9UserDesp
-                                   00000CF2 
+                                   00000CFC 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CF8 - 00000CF8 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000D02 - 00000D02 (0x1 bytes), align: 0
   Segment part 81.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileStartProps
-                                   00000CF8 
+                                   00000D02 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B30 - 00000B30 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B3A - 00000B3A (0x1 bytes), align: 0
   Segment part 83.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileStart      00000B30 
+           simpleProfileStart      00000B3A 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B31 - 00000B36 (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B3B - 00000B40 (0x6 bytes), align: 0
   Segment part 84.            Intra module refs:   Segment part 94
                                                    SimpleProfile_AddService
                                                    SimpleProfile_SetParameter
@@ -22846,56 +22849,56 @@ XDATA_Z
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileStartConfig
-                                   00000B31 
+                                   00000B3B 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CF9 - 00000CFE (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000D03 - 00000D08 (0x6 bytes), align: 0
   Segment part 85.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileStartUserDesp
-                                   00000CF9 
+                                   00000D03 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000CFF - 00000CFF (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000D09 - 00000D09 (0x1 bytes), align: 0
   Segment part 87.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileBattyProps
-                                   00000CFF 
+                                   00000D09 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B37 - 00000B37 (0x1 bytes), align: 0
+  Relative segment, address: XDATA 00000B41 - 00000B41 (0x1 bytes), align: 0
   Segment part 89.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileBatty      00000B37 
+           simpleProfileBatty      00000B41 
     -------------------------------------------------------------------------
 XDATA_Z
-  Relative segment, address: XDATA 00000B38 - 00000B3D (0x6 bytes), align: 0
+  Relative segment, address: XDATA 00000B42 - 00000B47 (0x6 bytes), align: 0
   Segment part 90.            Intra module refs:   Segment part 94
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileBattyConfig
-                                   00000B38 
+                                   00000B42 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000D00 - 00000D07 (0x8 bytes), align: 0
+  Relative segment, address: XDATA 00000D0A - 00000D11 (0x8 bytes), align: 0
   Segment part 91.            Intra module refs:   Segment part 94
            LOCAL                   ADDRESS         
            =====                   =======         
            simpleProfileBattyUserDesp
-                                   00000D00 
+                                   00000D0A 
     -------------------------------------------------------------------------
 XDATA_I
-  Relative segment, address: XDATA 00000D08 - 00000E8F (0x188 bytes), align: 0
+  Relative segment, address: XDATA 00000D12 - 00000E99 (0x188 bytes), align: 0
   Segment part 93.            Intra module refs:   SimpleProfile_AddService
                                                    SimpleProfile_SetParameter
            LOCAL                   ADDRESS         
            =====                   =======         
-           simpleProfileAttrTbl    00000D08 
+           simpleProfileAttrTbl    00000D12 
     -------------------------------------------------------------------------
 <XDATA_ROM_C> 1 (was XDATA_ROM_C)
   Relative segment, address: CONST 000081A0 - 000081A5 (0x6 bytes), align: 0
@@ -23309,6 +23312,7 @@ CSTART
                                                    Segment part 9 (ll_scheduler)
                                                    StartDetectLengthFlag (inch)
                                                    SytmPwrOnTim (inch)
+                                                   UploadBLEData::tmp_last (inch)
                                                    activePg (osal_snv)
                                                    adcRef (hal_adc)
                                                    advInfo (ll)
@@ -24140,6 +24144,7 @@ XSP
                                                    ?PUSH_XSTACK8_X (?PUSH_XSTACK8_X)
                                                    ?RESET_XSP (CSTARTUP)
                                                    ?Subroutine25 (gapbondmgr)
+                                                   ?Subroutine4 (inch)
                                                    ?Subroutine4 (simpleBLEPeripheral)
                                                    ?Subroutine7 (inch)
                                                    ?XSTACK_DISP0_8 (?XSTACK_DISP8)
@@ -24203,7 +24208,6 @@ XSP
                                                    Segment part 56 (gattservapp)
                                                    Segment part 61 (gatt_server)
                                                    Segment part 70 (gapbondmgr)
-                                                   Segment part 71 (inch)
                                                    Segment part 75 (hci)
                                                    Segment part 78 (sm_mgr)
                                                    Segment part 82 (hci)
@@ -24335,7 +24339,7 @@ CSTART
                                                    Segment part 51 (gattservapp)
                                                    Segment part 52 (l2cap_util)
                                                    Segment part 54 (gatt_server)
-                                                   Segment part 54 (inch)
+                                                   Segment part 55 (inch)
                                                    Segment part 61 (ll_common)
                                                    Segment part 70 (ll_timer2)
                                                    Segment part 78 (gap_linkmgr)
@@ -27460,11 +27464,11 @@ RCODE
   SEGMENTS IN THE MODULE
   ======================
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A7FE - 0001A82A (0x2d bytes), align: 0
+  Relative segment, address: CODE 0001A86B - 0001A897 (0x2d bytes), align: 0
   Segment part 6.             Intra module refs:   memset::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           memset                  0001A7FE 
+           memset                  0001A86B 
                XSTACK = 00000002 ( 00000009 )
                ISTACK = 00000000 ( 00000001 )
     -------------------------------------------------------------------------
@@ -27483,11 +27487,11 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A7C8 - 0001A7FD (0x36 bytes), align: 0
+  Relative segment, address: CODE 0001A835 - 0001A86A (0x36 bytes), align: 0
   Segment part 6.             Intra module refs:   strcat::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           strcat                  0001A7C8 
+           strcat                  0001A835 
                XSTACK = 00000000 ( 00000009 )
                ISTACK = 00000000 ( 00000001 )
     -------------------------------------------------------------------------
@@ -27505,11 +27509,11 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A855 - 0001A87C (0x28 bytes), align: 0
+  Relative segment, address: CODE 0001A8C2 - 0001A8E9 (0x28 bytes), align: 0
   Segment part 6.             Intra module refs:   strcpy::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           strcpy                  0001A855 
+           strcpy                  0001A8C2 
                XSTACK = 00000000 ( 00000009 )
                ISTACK = 00000000 ( 00000001 )
     -------------------------------------------------------------------------
@@ -27527,11 +27531,11 @@ BANK_RELAYS
   SEGMENTS IN THE MODULE
   ======================
 <BANKED_CODE> 2 (was BANKED_CODE)
-  Relative segment, address: CODE 0001A87D - 0001A89A (0x1e bytes), align: 0
+  Relative segment, address: CODE 0001A8EA - 0001A907 (0x1e bytes), align: 0
   Segment part 6.             Intra module refs:   strlen::?relay
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           strlen                  0001A87D 
+           strlen                  0001A8EA 
                ISTACK = 00000000 ( 00000002 )
     -------------------------------------------------------------------------
 BANK_RELAYS
@@ -27665,7 +27669,7 @@ hci                         1 320                    5
 hci_data                    1 040                   34
 hci_event                   3 298                    9
 hci_tl                        155                    6
-inch                        1 622                   37                   76
+inch                        1 746                   47                   76
   + shared                                                                8
 l2cap_if                      301
 l2cap_task                  1 145                   37
@@ -27707,7 +27711,7 @@ smp                         1 959
 N/A (command line)                    24           640    192
 N/A (alignment)                 3                                         1
 ----------                -------     --     --  -----    ---      -    ---
-Total:                    112 651     34     87  6 801    194      8    673
+Total:                    112 775     34     87  6 811    194      8    673
   + common                    134
 
 
@@ -27737,9 +27741,9 @@ NEAR_CODE            CODE          00001AE8 - 000023AA         8C3   rel    2
 <BANKED_CODE,CODE_C> 1
                      CODE          000023AC - 00007FFF        5C54   rel    2
 <BANKED_CODE,XDATA_ROM_C_FLASH> 1
-                     CODE          00008000 - 0000FFF7        7FF8   rel    2
+                     CODE          00008000 - 0000FFF3        7FF4   rel    2
 <BANKED_CODE> 1      CODE          00010000 - 00017FFF        8000   rel    0
-<BANKED_CODE> 2      CODE          00018000 - 0001A89A        289B   rel    0
+<BANKED_CODE> 2      CODE          00018000 - 0001A91A        291B   rel    0
 BLENV_ADDRESS_SPACE
                      CODE          0003E800 - 0003F7FF        1000   rel    0
 REGISTERS            DATA          00000000 - 00000007           8   rel    0
@@ -27766,9 +27770,9 @@ SFR_AN               DATA          00000080 - 00000080           1   rel    0
                      DATA          000000F1 - 000000F2           2 
                      DATA          000000F2 - 000000FF           E 
 XSTACK               XDATA         00000001 - 00000280         280   rel    0
-XDATA_Z              XDATA         00000281 - 00000B3D         8BD   rel    0
-XDATA_I              XDATA         00000B3E - 00000E8F         352   rel    0
-<XDATA_N> 1          XDATA         00000E90 - 00001A91         C02   rel    0
+XDATA_Z              XDATA         00000281 - 00000B47         8C7   rel    0
+XDATA_I              XDATA         00000B48 - 00000E99         352   rel    0
+<XDATA_N> 1          XDATA         00000E9A - 00001A9B         C02   rel    0
 PDATA_Z              XDATA              00001E00                     rel    0
 <XDATA_ROM_C> 1      CONST         00008000 - 000082A0         2A1   rel    2
 IDATA_I              IDATA              00000029                     dse    0
@@ -27781,9 +27785,9 @@ ISTACK               IDATA         00000040 - 000000FF          C0   rel    0
                 *                                      *
                 ****************************************
 
- 112 785 bytes of CODE  memory
+ 112 909 bytes of CODE  memory
       34 bytes of DATA  memory (+ 87 absolute )
-   6 801 bytes of XDATA memory
+   6 811 bytes of XDATA memory
      194 bytes of IDATA memory
        8 bits  of BIT   memory
      673 bytes of CONST memory
