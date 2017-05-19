@@ -59,7 +59,7 @@
  * CONSTANTS
  */
 
-#define SERVAPP_NUM_ATTR_SUPPORTED        38
+#define SERVAPP_NUM_ATTR_SUPPORTED        38+11
 
 /*********************************************************************
  * TYPEDEFS
@@ -167,103 +167,163 @@ static simpleProfileCBs_t *simpleProfile_AppCBs = NULL;
  */
 
 // Simple Profile Service attribute
-static CONST gattAttrType_t simpleProfileService = { ATT_BT_UUID_SIZE, simpleProfileServUUID };
+static CONST gattAttrType_t simpleProfileService = { ATT_BT_UUID_SIZE, simpleProfileServUUID }; 
 
 // Simple Profile Characteristic NODE0 Properties
-static uint8 simpleProfileNode0Props = GATT_PROP_READ;
+static uint8 simpleProfileNode0Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE0 Value
 static uint8 simpleProfileNode0[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node0 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode0Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE0 User Description
 static uint8 simpleProfileNode0UserDesp[6] = "Node0\0";
 
 
 // Simple Profile Characteristic NODE1 Properties
-static uint8 simpleProfileNode1Props = GATT_PROP_READ;
+static uint8 simpleProfileNode1Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE1 Value
 static uint8 simpleProfileNode1[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node1 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode1Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE1 User Description
 static uint8 simpleProfileNode1UserDesp[6] = "Node1\0";
 
 
 // Simple Profile Characteristic NODE2 Properties
-static uint8 simpleProfileNode2Props = GATT_PROP_READ;
+static uint8 simpleProfileNode2Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE2 Value
 static uint8 simpleProfileNode2[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node2 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode2Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE2 User Description
 static uint8 simpleProfileNode2UserDesp[6] = "Node2\0";
 
 
 // Simple Profile Characteristic NODE3 Properties
-static uint8 simpleProfileNode3Props = GATT_PROP_READ;
+static uint8 simpleProfileNode3Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE3 Value
 static uint8 simpleProfileNode3[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node3 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode3Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE3 User Description
 static uint8 simpleProfileNode3UserDesp[6] = "Node3\0";
 
 
 // Simple Profile Characteristic NODE4 Properties
-static uint8 simpleProfileNode4Props = GATT_PROP_READ;
+static uint8 simpleProfileNode4Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE4 Value
 static uint8 simpleProfileNode4[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node4 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode4Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE4 User Description
 static uint8 simpleProfileNode4UserDesp[6] = "Node4\0";
 
 
 // Simple Profile Characteristic NODE5 Properties
-static uint8 simpleProfileNode5Props = GATT_PROP_READ;
+static uint8 simpleProfileNode5Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE5 Value
 static uint8 simpleProfileNode5[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node5 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode5Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE5 User Description
 static uint8 simpleProfileNode5UserDesp[6] = "Node5\0";
 
 
 // Simple Profile Characteristic NODE6 Properties
-static uint8 simpleProfileNode6Props = GATT_PROP_READ;
+static uint8 simpleProfileNode6Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE6 Value
 static uint8 simpleProfileNode6[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node6 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode6Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE6 User Description
 static uint8 simpleProfileNode6UserDesp[6] = "Node6\0";
 
 
 // Simple Profile Characteristic NODE7 Properties
-static uint8 simpleProfileNode7Props = GATT_PROP_READ;
+static uint8 simpleProfileNode7Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE7 Value
 static uint8 simpleProfileNode7[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node7 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode7Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE7 User Description
 static uint8 simpleProfileNode7UserDesp[6] = "Node7\0";
 
 
 // Simple Profile Characteristic NODE8 Properties
-static uint8 simpleProfileNode8Props = GATT_PROP_READ;
+static uint8 simpleProfileNode8Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE8 Value
 static uint8 simpleProfileNode8[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node8 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode8Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE8 User Description
 static uint8 simpleProfileNode8UserDesp[6] = "Node8\0";
 
 
 // Simple Profile Characteristic NODE9 Properties
-static uint8 simpleProfileNode9Props = GATT_PROP_READ;
+static uint8 simpleProfileNode9Props = GATT_PROP_NOTIFY;
 
 // Characteristic NODE9 Value
 static uint8 simpleProfileNode9[SIMPLEPROFILE_NODE_LEN] = { 0, 0 };
+
+// Simple Profile Characteristic Node9 Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileNode9Config[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic NODE9 User Description
 static uint8 simpleProfileNode9UserDesp[6] = "Node9\0";
@@ -286,10 +346,16 @@ static uint8 simpleProfileStartUserDesp[6] = "Start\0";
 
 
 // Simple Profile Characteristic BATTY Properties
-static uint8 simpleProfileBattyProps = GATT_PROP_READ;
+static uint8 simpleProfileBattyProps = GATT_PROP_NOTIFY;
 
 // Characteristic BATTY Value
 static uint8 simpleProfileBatty=0;
+
+// Simple Profile Characteristic Batty Configuration Each client has its own
+// instantiation of the Client Characteristic Configuration. Reads of the
+// Client Characteristic Configuration only shows the configuration for
+// that client and writes only affect the configuration of that client.
+static gattCharCfg_t simpleProfileBattyConfig[GATT_MAX_NUM_CONN];
 
 // Simple Profile Characteristic BATTY User Description
 static uint8 simpleProfileBattyUserDesp[8] = "Battery\0";
@@ -332,9 +398,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node0
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode0UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode0 
+      },
+
+	// Characteristic Node0 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode0Config 
       },
 
       // Characteristic Node0 User Description
@@ -356,9 +430,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node1
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode1UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode1
+      },
+
+	// Characteristic Node1 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode1Config 
       },
 
       // Characteristic Node1 User Description
@@ -380,9 +462,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node2
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode2UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode2
+      },
+
+	// Characteristic Node2 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode2Config 
       },
 
       // Characteristic Node2 User Description
@@ -404,9 +494,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node3
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode3UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode3
+      },
+
+	// Characteristic Node3 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode3Config 
       },
 
       // Characteristic Node3 User Description
@@ -428,9 +526,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node4
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode4UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode4
+      },
+
+	// Characteristic Node4 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode4Config 
       },
 
       // Characteristic Node4 User Description
@@ -452,9 +558,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node5
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode5UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode5
+      },
+
+	// Characteristic Node5 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode5Config 
       },
 
       // Characteristic Node5 User Description
@@ -476,9 +590,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node6
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode6UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode6
+      },
+
+	// Characteristic Node6 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode6Config 
       },
 
       // Characteristic Node6 User Description
@@ -500,9 +622,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node7
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode7UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode7
+      },
+
+	// Characteristic Node7 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode7Config 
       },
 
       // Characteristic Node7 User Description
@@ -524,9 +654,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node8
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode8UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode8
+      },
+
+	// Characteristic Node8 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode8Config 
       },
 
       // Characteristic Node8 User Description
@@ -548,9 +686,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Node9
       { 
         { ATT_BT_UUID_SIZE, simpleProfilenode9UUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         simpleProfileNode9
+      },
+
+	// Characteristic Node9 configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileNode9Config 
       },
 
       // Characteristic Node9 User Description
@@ -604,9 +750,17 @@ static gattAttribute_t simpleProfileAttrTbl[SERVAPP_NUM_ATTR_SUPPORTED] =
       // Characteristic Value Batty
       { 
         { ATT_BT_UUID_SIZE, simpleProfilebattyUUID },
-        GATT_PERMIT_READ, 
+        0, 
         0, 
         &simpleProfileBatty
+      },
+
+	// Characteristic Batty configuration
+      { 
+        { ATT_BT_UUID_SIZE, clientCharCfgUUID },
+        GATT_PERMIT_READ | GATT_PERMIT_WRITE, 
+        0, 
+        (uint8 *)simpleProfileBattyConfig 
       },
 
       // Characteristic Batty User Description
@@ -750,20 +904,28 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
   {
 
 	case SIMPLEPROFILE_NODE0:
-      if ( len == SIMPLEPROFILE_NODE_LEN ) 
-      {
-        VOID osal_memcpy( simpleProfileNode0, value, SIMPLEPROFILE_NODE_LEN );
-      }
-      else
-      {
-        ret = bleInvalidRange;
-      }
-      break;
+		      if ( len == SIMPLEPROFILE_NODE_LEN ) 
+		      {
+		        VOID osal_memcpy( simpleProfileNode0, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode0Config, simpleProfileNode0, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
+		      }
+		      else
+		      {
+		        ret = bleInvalidRange;
+		      }
+		      break;
 	
 	case SIMPLEPROFILE_NODE1:
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode1, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode1Config, simpleProfileNode1, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -775,6 +937,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode2, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode2Config, simpleProfileNode2, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -786,6 +952,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode3, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode3Config, simpleProfileNode3, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -797,6 +967,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode4, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode4Config, simpleProfileNode4, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -808,6 +982,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode5, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode5Config, simpleProfileNode5, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -819,6 +997,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode6, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode6Config, simpleProfileNode6, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -830,6 +1012,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode7, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode7Config, simpleProfileNode7, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -841,6 +1027,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode8, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode8Config, simpleProfileNode8, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -852,6 +1042,10 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
 		  if ( len == SIMPLEPROFILE_NODE_LEN ) 
 		  {
 			VOID osal_memcpy( simpleProfileNode9, value, SIMPLEPROFILE_NODE_LEN );
+			// See if Notification has been enabled
+        		GATTServApp_ProcessCharCfg( simpleProfileNode9Config, simpleProfileNode9, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
 		  }
 		  else
 		  {
@@ -879,6 +1073,11 @@ bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value )
       if ( len == sizeof ( uint8 ) ) 
       {
         simpleProfileBatty = *((uint8*)value);
+
+	 // See if Notification has been enabled
+        GATTServApp_ProcessCharCfg( simpleProfileBattyConfig, &simpleProfileBatty, FALSE,
+                                    simpleProfileAttrTbl, GATT_NUM_ATTRS( simpleProfileAttrTbl ),
+                                    INVALID_TASK_ID );
       }
       else
       {
